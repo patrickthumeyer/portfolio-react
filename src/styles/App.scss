@@ -1,0 +1,39 @@
+@import-normalize;
+
+.App {
+  background-color: black;
+  height: 100%;
+}
+
+.wrapper {
+  background-image: url(../assets//images/street.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main-screen {
+  min-height: 140vh;
+  width: 100%;
+  position: relative;
+}
+
+.headline {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.transition {
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, black);
+  position: absolute;
+  bottom: 0px;
+}
