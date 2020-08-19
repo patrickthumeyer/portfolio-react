@@ -32,7 +32,7 @@ function Hero() {
               run. I decided to jump into Web Development in order to learn a
               new skill which also holds the potential to benefit from my former
               experience and gives me a clearer purpose of what I’m working
-              towards in an organisation. I am very excited to tackle all the
+              towards in an organization. I am very excited to tackle all the
               new problems being thrown my way and to dive deeper into the world
               of Web Development.
             </div>
