@@ -65,47 +65,47 @@ function Hero() {
           <h2 className="techStackHeadline">Tech Stack: </h2>
           <div className="tech">
             <div className="techIconWrapper">
-              <Html className="techIcon" />
+              <Html fill="#dbdbdb" />
               <p className="techLabel">HTML</p>
             </div>
             <div className="techIconWrapper">
-              <Css />
+              <Css fill="#dbdbdb" />
               <p className="techLabel">CSS</p>
             </div>
             <div className="techIconWrapper">
-              <Sass />
+              <Sass fill="#dbdbdb" />
               <p className="techLabel">SASS</p>
             </div>
             <div className="techIconWrapper">
-              <JavaScript />
+              <JavaScript fill="#dbdbdb" />
               <p className="techLabel">JavaScript</p>
             </div>
             <div className="techIconWrapper">
-              <ReactLogo />
+              <ReactLogo fill="#dbdbdb" />
               <p className="techLabel">React</p>
             </div>
             <div className="techIconWrapper">
-              <Bootstrap />
+              <Bootstrap fill="#dbdbdb" />
               <p className="techLabel">Bootstrap</p>
             </div>
             <div className="techIconWrapper">
-              <Jquery />
+              <Jquery fill="#dbdbdb" />
               <p className="techLabel">jQuery</p>
             </div>
             <div className="techIconWrapper">
-              <NodeJs />
+              <NodeJs fill="#dbdbdb" />
               <p className="techLabel">Node.js</p>
             </div>
             <div className="techIconWrapper">
-              <Mongo />
+              <Mongo fill="#dbdbdb" />
               <p className="techLabel">MongoDB</p>
             </div>
             <div className="techIconWrapper">
-              <Github />
+              <Github fill="#dbdbdb" />
               <p className="techLabel">GitHub</p>
             </div>
             <div className="techIconWrapper">
-              <Npm />
+              <Npm fill="#dbdbdb" />
               <p className="techLabel">npm</p>
             </div>
           </div>

@@ -10,7 +10,7 @@
   overflow-y: scroll;
   border-radius: 10px;
   background-color: rgba(63, 63, 63, 0.3);
-  color: white;
+  color: #dbdbdb;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -30,7 +30,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   z-index: -1;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .description {
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 30px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .socialIcon {
-  fill: white;
+  fill: #dbdbdb;
   transition: 0.2s;
 }
 
@@ -74,7 +74,6 @@
 }
 
 .expertise {
-  width: 100%;
   background-color: rgba(63, 63, 63, 0.3);
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +82,7 @@
   border-radius: 8px;
   backdrop-filter: blur(6px);
   margin-top: 30px;
-  color: black;
+  color: #dbdbdb;
 }
 
 .tech {
@@ -103,8 +102,8 @@
 }
 
 .techLabel {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 @media (min-width: 1000px) {
@@ -112,7 +111,7 @@
     flex-direction: column;
     justify-content: center;
     width: 70%;
-    height: 63vh;
+    height: 64vh;
   }
 
   .heroTopWrapper {
@@ -138,7 +137,8 @@
   }
 
   .techStackHeadline {
-    margin-right: 20px;
+    margin: 20px 20px 10px 20px;
+    font-weight: 300;
   }
 
   .techIconWrapper {
