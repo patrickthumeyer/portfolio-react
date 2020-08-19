@@ -1,0 +1,147 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  width: 65%;
+  height: 80vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background-color: rgba(63, 63, 63, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+}
+
+.heroTopWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
+.profileImage {
+  background-image: url(../../assets/images/Passfoto.JPG);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border: 5px solid rgb(43, 43, 43);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.descriptionContainer {
+  text-align: center;
+}
+
+.descriptionContainer h1 {
+  font-weight: 300;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.socialIconsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialIcon {
+  fill: white;
+  transition: 0.2s;
+}
+
+.socialIcon:hover {
+  fill: rgb(71, 92, 71);
+}
+
+.expertise {
+  width: 100%;
+  background-color: rgba(63, 63, 63, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  margin-top: 30px;
+  color: black;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.techIconWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+  margin: 10px;
+}
+
+.techLabel {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 63vh;
+  }
+
+  .heroTopWrapper {
+    flex-direction: row;
+  }
+
+  .descriptionContainer {
+    text-align: start;
+  }
+
+  .profileImage {
+    margin-right: 30px;
+    height: 240px;
+    width: 240px;
+  }
+
+  .socialIconsWrapper {
+    justify-content: flex-start;
+  }
+
+  .socialIcon {
+    margin-right: 30px;
+  }
+
+  .techStackHeadline {
+    margin-right: 20px;
+  }
+
+  .techIconWrapper {
+    margin: 20px;
+  }
+}

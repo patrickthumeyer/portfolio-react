@@ -5,8 +5,6 @@ import "./particles.scss";
 function ParticlesBackground() {
   return (
     <Particles
-      width={3000}
-      height={1000}
       className="particles"
       params={{
         particles: {
@@ -64,7 +62,7 @@ function ParticlesBackground() {
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 1,
             direction: "top-right",
             random: true,
             straight: false,
