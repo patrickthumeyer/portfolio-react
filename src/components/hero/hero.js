@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./hero.scss";
 import {
   Html,
@@ -14,17 +15,52 @@ import {
 } from "../icons/techIcons";
 import { Linkedin, Github, Mail } from "../icons/socialIcons";
 
+const techIconsContainer = {
+  hidden: {
+    opacity: 1,
+    scale: 0,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: 2,
+      when: "beforeChildren",
+    },
+  },
+};
+
+const techIcon = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 function Hero() {
   return (
     <div className="mainWrapper">
       <div className="hero">
         <div className="blur"></div>
         <div className="heroTopWrapper">
-          <div className="imageContainer">
+          <motion.div
+            className="imageContainer"
+            initial={{ y: -250, opacity: 0 }}
+            animate={{ y: -10, opacity: 1 }}
+            transition={{
+              delay: 1.5,
+              duration: 0.3,
+              mass: 0.4,
+              damping: 10,
+              type: "spring",
+              stiffness: 200,
+            }}
+          >
             <div className="profileImage"></div>
-          </div>
+          </motion.div>
           <div className="descriptionContainer">
-            <h1>Hey there! I´m Patrick.</h1>
+            <h1 className="descriptionHeadline">Hey there! I´m Patrick.</h1>
             <div className="description">
               I'm a Frontend Developer based in Berlin. In early 2018 I decided
               it was time for a change. My job as a Business Development Manager
@@ -61,55 +97,100 @@ function Hero() {
           </div>
         </div>
 
-        <div className="expertise">
+        <motion.div
+          className="expertise"
+          variants={techIconsContainer}
+          initial="hidden"
+          animate="visible"
+        >
           <h2 className="techStackHeadline">Tech Stack: </h2>
           <div className="tech">
-            <div className="techIconWrapper">
+            <motion.div variants={techIcon} className="techIconWrapper">
               <Html fill="#dbdbdb" />
               <p className="techLabel">HTML</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.1 }}
+              className="techIconWrapper"
+            >
               <Css fill="#dbdbdb" />
               <p className="techLabel">CSS</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.2 }}
+              className="techIconWrapper"
+            >
               <Sass fill="#dbdbdb" />
               <p className="techLabel">SASS</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.3 }}
+              className="techIconWrapper"
+            >
               <JavaScript fill="#dbdbdb" />
               <p className="techLabel">JavaScript</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.4 }}
+              className="techIconWrapper"
+            >
               <ReactLogo fill="#dbdbdb" />
               <p className="techLabel">React</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.5 }}
+              className="techIconWrapper"
+            >
               <Bootstrap fill="#dbdbdb" />
               <p className="techLabel">Bootstrap</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.6 }}
+              className="techIconWrapper"
+            >
               <Jquery fill="#dbdbdb" />
               <p className="techLabel">jQuery</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.7 }}
+              className="techIconWrapper"
+            >
               <NodeJs fill="#dbdbdb" />
               <p className="techLabel">Node.js</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.8 }}
+              className="techIconWrapper"
+            >
               <Mongo fill="#dbdbdb" />
               <p className="techLabel">MongoDB</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 0.9 }}
+              className="techIconWrapper"
+            >
               <Github fill="#dbdbdb" />
               <p className="techLabel">GitHub</p>
-            </div>
-            <div className="techIconWrapper">
+            </motion.div>
+            <motion.div
+              variants={techIcon}
+              transition={{ delay: 1 }}
+              className="techIconWrapper"
+            >
               <Npm fill="#dbdbdb" />
               <p className="techLabel">npm</p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
