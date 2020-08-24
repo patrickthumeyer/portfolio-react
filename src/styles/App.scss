@@ -94,8 +94,8 @@
 
 @media (min-width: 1000px) {
   .main-screen {
-    // max-height: 70vh;
-    min-height: 70vh;
+    min-height: 100%;
+    min-width: 70vw;
   }
 
   .contentWrapper {
@@ -107,12 +107,7 @@
 }
 
 @media (min-width: 1400px) {
-  .main-screen {
-    max-width: 70%;
-    // min-height: 55vh;
-  }
-
   .contentWrapper {
-    // min-height: 60vh;
+    justify-content: center;
   }
 }
