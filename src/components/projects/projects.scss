@@ -1,0 +1,23 @@
+.projectsContainer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testProject {
+  min-width: 300px;
+  max-height: 400px;
+  background-color: red;
+  margin: 20px;
+}
+
+@media (min-width: 1000px) {
+  .projectsContainer {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+  }
+}

@@ -1,53 +1,12 @@
-.mainWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  overflow-y: scroll;
-  width: 65%;
-  height: 80vh;
-  border-radius: 10px;
-  background-color: rgba(63, 63, 63, 0.3);
-  color: #dbdbdb;
-  padding: 30px;
-  position: relative;
 }
-
-// .hero::after {
-//   position: absolute;
-//   display: block;
-//   content: "";
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   left: 0;
-//   //   height: 100%;
-//   //   width: 100%;
-//   //   backdrop-filter: blur(3px);
-//   background-color: red;
-//   z-index: -1;
-// }
 
 .heroTopWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.blur {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  backdrop-filter: blur(2px);
-  z-index: -1;
 }
 
 .profileImage {
@@ -128,13 +87,6 @@
 }
 
 @media (min-width: 1000px) {
-  .hero {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 70%;
-    height: 64vh;
-  }
-
   .heroTopWrapper {
     flex-direction: row;
   }

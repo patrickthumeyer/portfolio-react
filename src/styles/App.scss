@@ -1,6 +1,6 @@
 @import-normalize;
 
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -22,20 +22,58 @@ html {
   overflow: hidden;
 }
 
-.main-screen {
-  max-height: 100vh;
-  width: 100%;
+.contentWrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(63, 63, 63, 0.3);
+  color: #dbdbdb;
+  padding: 30px;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+.main-screen {
+  max-height: 95vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   position: fixed;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navListItem {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 0px;
+  width: 49%;
+}
+
+.navElement {
+  color: #dbdbdb;
+  text-decoration: none;
+  background-color: rgba(177, 177, 177, 0.3);
+  backdrop-filter: blur(6px);
+  padding: 5px 0px;
+  border-radius: 5px;
+  display: block;
 }
 
 .particles {
   overflow: hidden;
-}
-
-.hero {
 }
 
 .transition-top {
@@ -52,4 +90,27 @@ html {
   background-image: linear-gradient(to bottom, transparent, black);
   position: absolute;
   bottom: 0px;
+}
+
+@media (min-width: 1000px) {
+  .contentWrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 60vh;
+  }
+
+  .main-screen {
+    min-width: 70%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-screen {
+    width: 55%;
+    min-height: 60vh;
+  }
+
+  .contentWrapper {
+    min-height: 60vh;
+  }
 }
