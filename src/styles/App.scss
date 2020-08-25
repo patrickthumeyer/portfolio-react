@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  background-image: url(../assets//images/street.jpg);
+  background-image: url(../assets/images.nosync/street.jpg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -59,7 +59,11 @@
   list-style-type: none;
   text-align: center;
   padding: 10px 0px;
-  width: 49%;
+  width: 50%;
+}
+
+.navListItem:first-child {
+  margin-right: 10px;
 }
 
 .navElement {
@@ -90,6 +94,17 @@
   background-image: linear-gradient(to bottom, transparent, black);
   position: absolute;
   bottom: 0px;
+}
+
+.footer {
+  color: #dbdbdb;
+  background-color: rgba(177, 177, 177, 0.3);
+  backdrop-filter: blur(6px);
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 @media (min-width: 1000px) {

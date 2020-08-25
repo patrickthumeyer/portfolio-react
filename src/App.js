@@ -36,6 +36,9 @@ function App() {
               </Route>
             </Switch>
           </div>
+          <div className="footer">
+            © Copyright 2020 Website by Patrick Thumeyer
+          </div>
         </div>
 
         <div className="transition-bottom"></div>
