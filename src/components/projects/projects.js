@@ -34,6 +34,10 @@ function Projects() {
       initial="hidden"
       animate="visible"
     >
+      <h1>
+        Small selection of a few projects. Feel free to visit the repo or
+        website.
+      </h1>
       <motion.div
         class="content"
         variants={project}
@@ -69,7 +73,7 @@ function Projects() {
       <motion.div
         class="content"
         variants={project}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.3 }}
       >
         <div class="content-overlay"></div>
         <img
@@ -102,7 +106,7 @@ function Projects() {
       <motion.div
         class="content"
         variants={project}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.5 }}
       >
         <div class="content-overlay"></div>
         <img
@@ -135,7 +139,7 @@ function Projects() {
       <motion.div
         class="content"
         variants={project}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.7 }}
       >
         <div class="content-overlay"></div>
         <img
@@ -166,39 +170,6 @@ function Projects() {
         </div>
       </motion.div>
     </motion.div>
-    // <ul className="projectsContainer">
-    //   <li className="container">
-    //     <img
-    //       src={require("../../assets/images.nosync/pflanzy.gif")}
-    //       alt="react-params-list"
-    //       className="project-gif"
-    //     />
-    //     <div className="middle-gif">
-    //       <button>Test</button>
-    //     </div>
-    //   </li>
-    //   <li className="container">
-    //     <img
-    //       src={require("../../assets/images.nosync/React-Params-List.png")}
-    //       alt="react-params-list"
-    //       className="project"
-    //     />
-    //   </li>
-    //   <li className="container">
-    //     <img
-    //       src={require("../../assets/images.nosync/CSS-Portfolio.png")}
-    //       alt="react-params-list"
-    //       className="project"
-    //     />
-    //   </li>
-    //   <li className="container">
-    //     <img
-    //       src={require("../../assets/images.nosync/Converter.png")}
-    //       alt="react-params-list"
-    //       className="project"
-    //     />
-    //   </li>
-    // </ul>
   );
 }
 

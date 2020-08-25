@@ -134,6 +134,7 @@ body {
   .container {
     display: block;
     width: 100%;
+    padding-top: 0;
   }
 }
 
@@ -141,6 +142,7 @@ body {
   .container {
     width: 100%;
     display: flex;
+    align-items: center;
   }
 
   .content {
@@ -153,64 +155,4 @@ body {
     align-items: center;
     overflow-x: scroll;
   }
-}
-
-// .project-gif {
-//   width: auto;
-//   height: auto;
-//   object-fit: cover;
-//   object-position: center;
-//   background-repeat: no-repeat;
-//   margin-bottom: 10px;
-//   opacity: 1;
-//   display: block;
-//   transition: 0.5s ease;
-//   backface-visibility: hidden;
-// }
-
-// .project {
-//   max-width: 250px;
-//   height: auto;
-//   object-fit: contain;
-//   object-position: center;
-//   background-repeat: no-repeat;
-//   margin-bottom: 20px;
-//   opacity: 1;
-//   display: block;
-//   transition: 0.5s ease;
-//   backface-visibility: hidden;
-// }
-
-// .middle {
-//   transition: 0.5s ease;
-//   opacity: 0;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   text-align: center;
-// }
-
-// .container:hover .image {
-//   opacity: 0.3;
-// }
-
-// .container:hover .middle {
-//   opacity: 1;
-// }
-
-@media (min-width: 1000px) {
-  //   .project-gif {
-  //     margin-right: 20px;
-  //     // max-width: 200px;
-  //     // width: 200px;
-  //     // max-height: 80%;
-  //     // object-fit: contain;
-  //   }
-
-  //   .project {
-  //     margin-right: 200px;
-  //     min-width: 400px;
-  //   }
 }

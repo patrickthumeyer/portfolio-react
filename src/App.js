@@ -16,12 +16,21 @@ function App() {
         <div className="main-screen">
           <ul className="navContainer">
             <li className="navListItem">
-              <NavLink className="navElement" exact to="/">
+              <NavLink
+                activeClassName="currentNav"
+                className="navElement"
+                exact
+                to="/"
+              >
                 HOME
               </NavLink>
             </li>
             <li className="navListItem">
-              <NavLink className="navElement" to="/projects">
+              <NavLink
+                activeClassName="currentNav"
+                className="navElement"
+                to="/projects"
+              >
                 PROJECTS
               </NavLink>
             </li>

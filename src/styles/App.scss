@@ -45,6 +45,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 5;
 }
 
 .navContainer {
@@ -69,11 +70,20 @@
 .navElement {
   color: #dbdbdb;
   text-decoration: none;
-  background-color: rgba(177, 177, 177, 0.3);
+  background-color: rgba(131, 131, 131, 0.3);
   backdrop-filter: blur(6px);
   padding: 5px 0px;
   border-radius: 5px;
   display: block;
+  transition: 0.3s;
+}
+
+.navElement:hover {
+  background-color: rgba(236, 236, 236, 0.3);
+}
+
+.currentNav {
+  background-color: rgba(236, 236, 236, 0.3);
 }
 
 .particles {
@@ -94,11 +104,12 @@
   background-image: linear-gradient(to bottom, transparent, black);
   position: absolute;
   bottom: 0px;
+  z-index: 0;
 }
 
 .footer {
   color: #dbdbdb;
-  background-color: rgba(177, 177, 177, 0.3);
+  background-color: rgba(133, 133, 133, 0.3);
   backdrop-filter: blur(6px);
   width: 100%;
   text-align: center;
