@@ -137,7 +137,7 @@
 
 @media (min-width: 1100px) {
   .main-screen {
-    max-height: 72vh;
+    min-height: 700px;
   }
 
   .contentWrapper {
@@ -149,12 +149,16 @@
   .contentWrapper {
     justify-content: center;
   }
+
+  .main-screen {
+    max-height: 550px;
+  }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1360px) {
   .main-screen {
     min-width: 800px;
     max-width: 1100px;
-    max-height: 68vh;
+    min-height: 680px;
   }
 }
