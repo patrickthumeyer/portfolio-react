@@ -17,7 +17,8 @@
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 10px;
   justify-content: center;
   overflow: hidden;
 }
@@ -38,14 +39,14 @@
 }
 
 .main-screen {
-  height: 92vh;
-  width: 80%;
+  height: 85vh;
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 5;
+  z-index: 2;
 }
 
 .navContainer {
@@ -54,6 +55,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .navListItem {
@@ -109,7 +111,7 @@
 
 .footer {
   color: #dbdbdb;
-  background-color: rgba(133, 133, 133, 0.3);
+  background-color: rgba(177, 177, 177, 0.3);
   backdrop-filter: blur(6px);
   width: 100%;
   text-align: center;
@@ -119,22 +121,40 @@
   font-size: 12px;
 }
 
-@media (min-width: 1000px) {
-  .main-screen {
-    min-height: 100%;
-    min-width: 70vw;
+@media (min-width: 600px) {
+  .wrapper {
+    align-items: center;
   }
 
   .contentWrapper {
-    flex-direction: column;
     justify-content: flex-start;
-    max-height: 70%;
-    flex-grow: 1;
+  }
+
+  .navContainer {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main-screen {
+    max-height: 72vh;
+  }
+
+  .contentWrapper {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contentWrapper {
+    justify-content: center;
   }
 }
 
 @media (min-width: 1400px) {
-  .contentWrapper {
-    justify-content: center;
+  .main-screen {
+    min-width: 800px;
+    max-width: 1100px;
+    max-height: 68vh;
   }
 }
