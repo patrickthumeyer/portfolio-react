@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: flex-start;
   padding-top: 10px;
@@ -53,7 +53,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .navListItem {
@@ -133,23 +133,13 @@
   }
 }
 
-@media (min-width: 1100px) {
-  .main-screen {
-    min-height: 700px;
-  }
-
-  .contentWrapper {
-    justify-content: center;
-  }
-}
-
 @media (min-width: 1200px) {
   .contentWrapper {
     justify-content: center;
   }
 
   .main-screen {
-    max-height: 550px;
+    max-height: 650px;
   }
 }
 
