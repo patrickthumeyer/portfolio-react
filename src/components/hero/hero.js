@@ -14,6 +14,7 @@ import {
   Npm,
 } from "../icons/techIcons";
 import { Linkedin, Github, Mail } from "../icons/socialIcons";
+import { Helmet } from "react-helmet";
 
 const techIconsContainer = {
   hidden: {
@@ -41,6 +42,10 @@ const techIcon = {
 function Hero() {
   return (
     <div className="hero">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
       <div className="heroTopWrapper">
         <motion.div
           className="imageContainer"

@@ -2,6 +2,7 @@ import React from "react";
 import "./projects.scss";
 import { Github, WWW } from "../icons/socialIcons";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const projectsContainer = {
   hidden: {
@@ -34,6 +35,10 @@ function Projects() {
       initial="hidden"
       animate="visible"
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
       <h1>
         Small selection of a few projects. Feel free to visit the repo or
         website.
