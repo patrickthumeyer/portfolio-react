@@ -90,7 +90,7 @@ function Projects() {
           <h3 class="content-title">React Params List</h3>
           <div className="linkContainer">
             <a
-              href="https://github.com/patrickthumeyer/react-params-product-list"
+              href="https://github.com/patrickthumeyer/product-list-react-hooks"
               target="_blank"
               className="link"
             >
@@ -98,7 +98,7 @@ function Projects() {
               <p>GitHub</p>
             </a>
             <a
-              href="https://patrickthumeyer.github.io/react-params-product-list/"
+              href="https://product-list-react-hooks.vercel.app/"
               target="_blank"
               className="link"
             >
